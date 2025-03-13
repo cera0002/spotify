@@ -1,11 +1,56 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/style.css";
+import Header from "../components/Header.astro";
+import Smallcard from "../components/Smallcard.astro";
+import Card from "../components/Cards.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <button>Alle</button>
+      <button>Musik</button>
+      <button>Podcasts</button>
+      <div class="container">
+        <section class="smallcards">
+          <Smallcard tekst="Wonderful Blues" />
+          <Smallcard tekst="Den gode morgen" />
+          <Smallcard tekst="Våd hund i Snor" />
+          <Smallcard tekst="Beyonce was here" />
+          <Smallcard tekst="Gå i bad glad " />
+          <Smallcard tekst="Trip trap træls" />
+        </section>
+      </div>
+      <h1>Specielt til dig, Peter Ulf</h1>
+      <section class="roll">
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+      </section>
+      <h1>Se indhold som er udvalgt til dig</h1>
+      <section class="roll2">
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+        <Card tekst="Drew sycamore, dua lipa and many more.." />
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

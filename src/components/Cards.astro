@@ -1,0 +1,42 @@
+---
+const { header, tekst } = Astro.props;
+---
+
+<article>
+  <div class="kort">
+    <img src="../src/assets/album-kopi.png.jpeg" alt="" />
+    <h2>Dailymix</h2>
+  </div>
+  <p class="daily">{tekst}</p>
+</article>
+
+<style>
+  .kort img {
+    width: 150px;
+    height: auto;
+  }
+
+  .kort {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    color: white;
+    background-color: magenta;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+    bottom: 8px;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+
+  p {
+    padding-top: 2px;
+    font-size: 12px;
+    color: dimgray;
+    font-family: sans-serif;
+  }
+</style>

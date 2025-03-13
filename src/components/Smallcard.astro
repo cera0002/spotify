@@ -1,0 +1,39 @@
+---
+const { tekst } = Astro.props;
+---
+
+<div class="smallcards">
+  <div class="card">
+    <img src="/src/assets/album.png.jpeg" alt="" />
+    <p>{tekst}</p>
+  </div>
+</div>
+
+<style>
+  .card img {
+    width: 50px;
+    height: auto;
+  }
+
+  .card {
+    background-color: rgba(81, 79, 79, 0.708);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+  }
+
+  p {
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+  .smallcards {
+    margin-top: 20px;
+    margin-left: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: 100%;
+  }
+</style>

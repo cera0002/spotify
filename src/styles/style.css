@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+main {
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+  background-color: rgba(11, 11, 11, 0.87);
+}
+
+button {
+  background-color: rgba(81, 79, 79, 0.708);
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 25px;
+}
+
+.smallcards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+  grid-template-rows: repeat(2, auto); /* 2 rækker */
+  max-width: 100%; /* Sørger for en pæn bredde */
+  margin: 0 auto; /* Centrerer grid’et */
+}
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+.roll,
+.roll2 {
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 3 kolonner */
+  gap: 20px;
+  overflow-wrap: anywhere;
+  max-width: 200px;
+}
